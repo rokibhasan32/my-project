@@ -1,47 +1,327 @@
-body{
-    font-family: Work Sans;
+*{
+    margin: 0;
+    padding: 0;
+
+    /* debugging */
+    /* border: 1px solid red; */
 }
-.btn-primary{
-    display: flex; 
-    flex-direction: column;
-    border-radius: 5px;
-background: #FD6E0A;
-border: 0;
-color: white;
-text-align: right;
-font-size: 20px;
-font-weight: 600;
-line-height: normal;
-width: 160px
-height: 64px;
-padding: 10px 35px;
-margin: 578px 230px 167px 1210px;
-}
-.banner-content-inside{
-    gap: 26px;
-}
-.banner-content-inside{ 
+
+
+/* header section styles */
+
+.header-section{
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 80vh;
     display: flex;
+}
+
+/* left side img */
+.img-header{
+    padding-left: 380px;
+    padding-top: 250px;
+}
+
+
+
+/* right side texts */
+.right-header{
     text-align: right;
-    flex-direction: column;
-    flex-shrink: 0;
-    font-style: normal;
+    padding-top: 300px;
+    padding-right: 500px;
 }
-.banner-title{
-    margin: 216px 230px 365px 845px;
-    width: 525px;
-    height: 228px;
-    color: #151414;
-    font-size: 65px;
+
+/* heading tiltle */
+.header-title{
     font-weight: 700;
-    line-height: normal;
+    font-size: 50px;
+   
 }
-.banner-description{
-    margin: 468px 230px 263px 876px;
-    width: 494px;
-    height: 78px;
-    color: #444343;
-    font-size: 16px;
+
+/* header decription */
+.header-description{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 400;
+    color: black;
+
+}
+
+/* universal button */
+.btn{
+    height: 50px;
+    width: 140px;
+    background-color: #F15822;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+main{
+    max-width: 1140px;
+}
+
+
+
+
+
+
+/* section failure */
+.failure{
+    margin-top: 70px;
+    display: flex;
+    margin-bottom: 75px;
+}
+
+
+/* img left failure */
+.left-failure{
+
+    padding-left: 400px;
+}
+
+
+
+/* texts group */
+.right-failure{
+    padding-left: 100px;
+    padding-top: 230px;
+    padding-right: 200px;
+}
+
+
+/* right text heading */
+.failure-heading{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-right: 200px;
+}
+
+
+
+/* right side description */
+.filure-description{
     font-weight: 400;
-    line-height: 26px;
+    color: black;
+    margin-bottom: 15px;
+
+}
+
+
+/* list with tick */
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓ ';
+    color: green;
+  }
+
+
+
+  /* ---------------section of my plan---------------*/
+
+
+.my-plan{
+    margin-bottom: 100px;
+}
+
+
+
+.plan-top-head{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 800px;
+    margin-bottom: 15px;
+}
+
+
+.sub-plan{
+    display: flex;
+    margin-left: 650px;
+}
+
+.plan{
+    margin-right: 80px;
+    text-align: center;
+}
+
+.plan-heading{
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+
+
+/* for video section */
+
+
+
+.video-section{
+    display: flex;
+    margin-left: 450px;
+    margin-bottom: 90px;
+}
+
+.video{
+    height: 200px;
+    width: 400px;
+
+}
+
+.space{
+    margin-top: 30px;
+}
+
+
+
+.video-part{
+    padding-left: 140px;
+}
+
+
+.video-title{
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.video-list{
+    padding-top: 82px;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+
+/* gradient part */
+
+
+.container{
+    background: url('../assets/images/watch.png');
+    color: white;
+    position: relative;
+    height:260px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 500px;   
+    margin-bottom: 200px;                   
+}
+
+.color-overlay{
+    background: linear-gradient(to left , blue, red);
+    width:100%;
+    height: 100%;
+   opacity: .4;
+   position: absolute;
+}
+
+.gradient-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-right: 300px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+
+.gradient-button{
+    position: absolute;
+    margin-right: 500px;
+    margin-top: 110px;
+
+}
+
+
+
+/* footer part */
+
+
+.footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height:30vh;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+
+.left-footer{
+    width: 50%;
+    margin-left: 250px;
+}
+
+
+
+.footer-title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.footer-des{
+    font-size: 20px;
+    margin-bottom: 22px;
+    text-shadow: none;
+}
+
+.footer-mail{
+    margin-bottom: 14px;
+}
+
+
+.footer-phone{
+    margin-bottom: 25px;
+}
+
+.icons{
+    display: flex;
+}
+
+.foot-icon{
+    margin-right: 15px;
+}
+
+
+.form{
+    width:50%;
+    margin-left: 100px;
+}
+
+.foot-sub{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.foot-field{
+    height: 50px;
+    width: 300px;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: small;
+    background-color: black;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+
+
+.foot-btn{
+    height: 50px;
+    width: 140px;
+    background-color: white;
+    border: none;
+    color: #F15822;
+    border-radius: 6px;
 }
